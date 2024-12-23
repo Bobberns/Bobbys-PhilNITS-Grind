@@ -7,6 +7,6 @@ Clone the repo using the following command into your preferred file directory.
 ```
 git clone  https://github.com/Bobberns/Bobbys-PhilNITS-Grind.git
 ```
-
+Suggestion: open the repo in an Obsidian vault.
 #### Collaboration
 As of now, I will **NOT** make this repository collaborative. Maybe in the future I will.
