@@ -11,7 +11,7 @@ December 24, 2024
 Information can exist in various forms, such as characters and numerals. However, when stored in a computer, all information—regardless of its form—is represented as combinations of 1s and 0s. This representation, known as <font color="#76923c">**binary numbers**, serves as the foundation of all digital data</font>. Simply put, at its core, all computer-stored information is essentially just sequences of 1s and 0s.
 
 >[!question]
-Now, I want to understand why must we understand how information is translated into the computer, why must we learn how the computer understands information and data at the lowest level.
+Now, why must we understand how information is translated into the compute? Why must we learn how the computer understands information and data at the lowest level?
 
 >**Information Theory** is the mathematical study of the quantification, storage, and communication of information.
 
