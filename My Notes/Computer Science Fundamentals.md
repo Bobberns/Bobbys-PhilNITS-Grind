@@ -107,12 +107,33 @@ These numeral systems illustrate the adaptability of computing to diverse applic
 > **Information Theory** -> **Primary Unit of Information** -> ~~**Radix Conversion**~~
 
 ***
+##### What is a Number System?
+A number system is a writing system for expressing numbers in a consistent manner using a set of symbols or digits. This defines how a number must be represented and how arithmetic operations are performed on those representations.
+
+Each number system has its **base** *(also referred to as "radix")*, which determines the number of unique symbols used in the system.
+
+**Key Components**
+1. <font color="#76923c">**Base**</font> -  the radix and represented as *"base n"* where n shall be the number of digits. 
+2. <font color="#76923c"> **Digits**</font>
+3. <font color="#76923c">**Positional Value**</font> - the position of a digit within its number determines its value, based on the base of the system.
+
+Example:
+<center>2<sup>7</sup>  2<sup>6</sup>  2<sup>5</sup>  2<sup>4</sup>    2<sup>3</sup>  2<sup>2</sup>  2<sup>1</sup>  2<sup>0</sup>
+</center>
+
+<font color="#76923c">![[Pasted image 20241225234022.png|200]]</font><center>128 64 32 16 8 4 2 1</center>
+<center><font color="#7f7f7f">(each digit w/ its corresponding positional weight)</font></center>
+One number system can often be converted to another by using specific rules. For example, binary numbers can be converted to decimal, octal, or hexadecimal.
+
+---
+
 # Radix Conversion
 We've went over how computers physically represent binary states in hardware and how significant is it for grasping how they process and store information. While computers inherently work in binary, humans typically use other numerical systems like decimal, octal, or hexadecimal in various applications. <font color="#76923c">Radix conversion simply acts as a **bridge between number systems**, enabling seamless interaction between human and machine-readable formats.</font> 
 
 ![[Pasted image 20241225215100.png|400]]
 <center><font color="#7f7f7f">(conversion shortcut)</font></center>
 
+For any base number,  
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Octal</span>
 Process:
 1. Given a binary number, **group the bits into three** from right to left.
@@ -130,16 +151,16 @@ Process:
 |  110   |   6   |
 |  111   |   7   |
 **Practice Problems**
-1. 101010
-2. 110101
-3. 110011110111
-4. 111110
-5. 10101101
-6. 1001010
-7. 111011100
-8. 10001100101
-9. 101110011
-10. 1001011
+1. 101 010 = 
+2. 110 101 = 
+3. 110 011 110 111
+4. 111 110
+5. 10 101 101
+6. 1 001 010
+7. 111 011 100
+8. 10 001 100 101
+9. 101 110 011
+10. 1 001 011
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Octal to Binary</span>
 
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Decimal</span>

@@ -7,10 +7,20 @@ Clone the repo using the following command into your preferred file directory.
 ```
 git clone  https://github.com/Bobberns/Bobbys-PhilNITS-Grind.git
 ```
-
 ### Suggestions
 - Open the repo in an Obsidian vault.
 - Theme: Typewriter by crashmoney (dark mode)
+- Apply the following lines of codes in your **custom.css** file
+```
+.markdown-preview-view img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  mix-blend-mode: lighten;
+  opacity: 0.5;
+}
+```
 
 ### Plugins
 - Editing Toolbar by cuman
