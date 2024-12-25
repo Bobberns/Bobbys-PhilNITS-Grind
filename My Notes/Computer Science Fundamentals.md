@@ -115,10 +115,31 @@ We've went over how computers physically represent binary states in hardware and
 
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Octal</span>
 Process:
-1. Given a binary number, group the bits into four from right to left.
+1. Given a binary number, **group the bits into three** from right to left.
 2. Add leading zeros to the leftmost group if necessary.
 3. Convert each group into octal.
 
+| Binary | Octal |
+| :----: | :---: |
+|  000   |   0   |
+|  001   |   1   |
+|  010   |   2   |
+|  011   |   3   |
+|  100   |   4   |
+|  101   |   5   |
+|  110   |   6   |
+|  111   |   7   |
+**Practice Problems**
+1. 101010
+2. 110101
+3. 110011110111
+4. 111110
+5. 10101101
+6. 1001010
+7. 111011100
+8. 10001100101
+9. 101110011
+10. 1001011
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Octal to Binary</span>
 
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Decimal</span>
