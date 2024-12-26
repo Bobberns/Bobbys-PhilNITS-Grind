@@ -106,7 +106,7 @@ Base 64 is often used in <font color="#76923c">encoding schemes for data transfe
 
 These numeral systems illustrate the adaptability of computing to diverse applications, bridging human logic and machine efficiency.
 
-> [!no]
+> [!note]
 > So far we have went over the following:
 > **Information Theory** -> **Primary Unit of Information** -> ~~**Radix Conversion**~~
 
@@ -145,6 +145,8 @@ Process:
 2. Add leading zeros to the leftmost group if necessary.
 3. Convert each group into octal.
 
+![[Pasted image 20241226194702.png|200]]
+
 | Binary | Octal |
 | :----: | :---: |
 |  000   |   0   |
@@ -155,9 +157,8 @@ Process:
 |  101   |   5   |
 |  110   |   6   |
 |  111   |   7   |
-**Practice Problems**
 
-![[Pasted image 20241226192328.png|300]]
+**Practice Problems**
 
 |     Binary      |   Octal   |
 | :-------------: | :-------: |
@@ -173,6 +174,26 @@ Process:
 |    1 001 011    |  **113**  |
 
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Octal to Binary</span>
+Process:
+1. For each digit in the given octal number, convert it into binary of three bits.
+2. Combine the binary groups.
+
+![[Pasted image 20241226194555.png|200]]
+
+**Practice Problems**
+
+| Octal |     **Binary**      |
+| :---: | :-------------: |
+| 7 643 | **111 110 100 011** |
+| 3 152 | **011 001 101 010** |
+| 4 075 | **100 000 111 101** |
+| 6 251 | **110 010 101 001** |
+| 7 324 | **111 011 010 100** |
+| 5 670 | **101 110 111 000** |
+| 1 777 | **001 111 111 111** |
+| 2 465 | **010 100 110 101** |
+| 7 016 | **111 000 001 110** |
+| 5 123 | **101 001 010 011** |
 
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Decimal</span>
 
