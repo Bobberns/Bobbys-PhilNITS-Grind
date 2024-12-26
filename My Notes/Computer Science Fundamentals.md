@@ -17,6 +17,8 @@ Now, why must we understand how information is translated into the compute? Why 
 
 ### The Relation of Information Theory in Computer Science
 Information theory and computer science are closely intertwined in several ways:
+
+![[Pasted image 20241226193429.png]]
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Data Compression</span>
 Information theory provides the foundational principles for data compression techniques. Concepts like **entropy** *(the measurement of degree in randomness)* help quantify the amount of information in a message, <font color="#76923c">guiding the development of algorithms that **reduce the size of data** without losing essential information</font> (e.g., ZIP files, JPEG images).
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Error Detection and Correction</span>
@@ -61,6 +63,8 @@ For example:
 Theoretically, we know that data can be represented in Binary as its lowest form. However, <font color="#76923c">how does the computer represent this information physically in regards to hardware?</font> Different components of the computer are relied on to store and manage these binary states.
 
 Here are a few components as examples:
+
+![[Pasted image 20241226192937.png|400]]
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Transistors: The Foundation of Digital Logic</span>
 Transistors are the <font color="#76923c">smallest and most fundamental building blocks of modern electronics</font>. They act like tiny switches:
 <font color="#76923c">**ON (1)**</font>: When current flows through the transistor.
@@ -115,9 +119,10 @@ Each number system has its **base** *(also referred to as "radix")*, which deter
 **Key Components**
 1. <font color="#76923c">**Base**</font> -  the radix and represented as *"base n"* where n shall be the number of digits. 
 2. <font color="#76923c"> **Digits**</font>
-3. <font color="#76923c">**Positional Value**</font> - the position of a digit within its number determines its value, based on the base of the system.
+3. <font color="#76923c">**Positional Value**</font> - the position of a digit within its number determines its value, based on the base of the system. 
 
 Example:
+Suppose that given the base number <font color="#d99694">**n**</font>, its <font color="#d99694">**positional weight**</font> shall be <font color="#d99694">**n<sup>a</sup>**</font>, wherein a shall the the <font color="#d99694">**positional value**</font>.
 <center>2<sup>7</sup>  2<sup>6</sup>  2<sup>5</sup>  2<sup>4</sup>    2<sup>3</sup>  2<sup>2</sup>  2<sup>1</sup>  2<sup>0</sup>
 </center>
 
@@ -151,16 +156,22 @@ Process:
 |  110   |   6   |
 |  111   |   7   |
 **Practice Problems**
-1. 101 010 = 
-2. 110 101 = 
-3. 110 011 110 111
-4. 111 110
-5. 10 101 101
-6. 1 001 010
-7. 111 011 100
-8. 10 001 100 101
-9. 101 110 011
-10. 1 001 011
+
+![[Pasted image 20241226192328.png|300]]
+
+|     Binary      |   Octal   |
+| :-------------: | :-------: |
+|     101 010     |  **52**   |
+|     110 101     |  **65**   |
+| 110 011 110 111 | **6 367** |
+|     111 110     |  **76**   |
+|   10 101 101    |  **255**  |
+|    1 001 010    |  **112**  |
+|   111 011 100   |  **734**  |
+| 10 001 100 101  | **2 145** |
+|   101 110 011   |  **563**  |
+|    1 001 011    |  **113**  |
+
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Octal to Binary</span>
 
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Decimal</span>
