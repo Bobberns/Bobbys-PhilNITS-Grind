@@ -138,27 +138,76 @@ We've went over how computers physically represent binary states in hardware and
 ![[Pasted image 20241225215100.png|400]]
 <center><font color="#7f7f7f">(conversion shortcut)</font></center>
 
-For any base number,  
+| Decimal | Binary | Octal | Hexadecimal |
+| :-----: | :----: | :---: | :---------: |
+|    0    | 0 0000 |   0   |      0      |
+|    1    | 0 0001 |   1   |      1      |
+|    2    | 0 0010 |   2   |      2      |
+|    3    | 0 0011 |   3   |      3      |
+|    4    | 0 0100 |   4   |      4      |
+|    5    | 0 0101 |   5   |      5      |
+|    6    | 0 0110 |   6   |      6      |
+|    7    | 0 0111 |   7   |      7      |
+|    8    | 0 1000 |  10   |      8      |
+|    9    | 0 1001 |  11   |      9      |
+|   10    | 0 1010 |  12   |      A      |
+|   11    | 0 1011 |  13   |      B      |
+|   12    | 0 1100 |  14   |      C      |
+|   13    | 0 1101 |  15   |      D      |
+|   14    | 0 1110 |  16   |      E      |
+|   15    | 0 1111 |  17   |      F      |
+|   16    | 1 0000 |  20   |     10      |
+|   17    | 1 0001 |  21   |     11      |
+|   18    | 1 0010 |  22   |     12      |
+|   19    | 1 0011 |  23   |     13      |
+|   20    | 1 0100 |  24   |     14      |
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Octal</span>
 Process:
 1. Given a binary number, <font color="#92d050">**group the bits into three**</font> from right to left.
 2. Add leading zeros to the leftmost group if necessary.
 3. Convert each group into octal.
 
-![[Pasted image 20241226194702.png|200]]
+![[Pasted image 20241227144612.png|200]]
 
-**Floating-point numbers:**
+##### <span style="background:rgba(140, 140, 140, 0.12)">Octal to Binary</span>
+Process:
+1. For each digit in the given octal number, <font color="#92d050">**convert it into binary of three bits**</font>.
+2. Combine the binary groups.
 
-| Binary | Octal |
-| :----: | :---: |
-|  000   |   0   |
-|  001   |   1   |
-|  010   |   2   |
-|  011   |   3   |
-|  100   |   4   |
-|  101   |   5   |
-|  110   |   6   |
-|  111   |   7   |
+![[Pasted image 20241226194555.png|200]]
+
+##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Decimal</span>
+Process:
+1. Given that each bit has a positional value from LSB (right) to MSB (left), mind only bits with the presence of 1.
+2. Get the <font color="#92d050">summative positional weights of the present positional values</font>.
+
+![[Pasted image 20241227150224.png|400]]
+
+##### <span style="background:rgba(140, 140, 140, 0.12)">Decimal to Binary</span>
+Process:
+1. Given the decimal number, find the <font color="#92d050">positional bit value that is less than or equal to the bit</font>.
+2. Subtract the positional bit value to the current value of the given number each time a bit is marked. 
+3. Do this until the binary number is formed.
+
+Example:
+Convert (78)<sub>10</sub> to Binary
+
+![[Pasted image 20241227152051.png|400]]
+
+##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Hexadecimal</span>
+
+
+##### <span style="background:rgba(140, 140, 140, 0.12)">Hexadecimal to Binary</span>
+
+
+---
+
+> [!tip]
+> Dec 26, 2024 (9:00pm); Research Homework w/ Val (due Dec 27, 2024)
+> - Numerical & Non-Numerical Representations
+> - Backus-Naur Form (BNF)
+> - Reverse Polish Notation
+> - Quick Sort
 
 **Practice Problems**
 
@@ -175,19 +224,8 @@ Process:
 |   101 110 011   |  **563**  |
 |    1 001 011    |  **113**  |
 
-##### <span style="background:rgba(140, 140, 140, 0.12)">Octal to Binary</span>
-Process:
-1. For each digit in the given octal number, <font color="#92d050">**convert it into binary of three bits**</font>.
-2. Combine the binary groups.
-
-![[Pasted image 20241226194555.png|200]]
-
-**Floating-point numbers:**
-
-**Practice Problems**
-
 | Octal |     **Binary**      |
-| :---: | :-------------: |
+| :---: | :-----------------: |
 | 7 643 | **111 110 100 011** |
 | 3 152 | **011 001 101 010** |
 | 4 075 | **100 000 111 101** |
@@ -198,21 +236,3 @@ Process:
 | 2 465 | **010 100 110 101** |
 | 7 016 | **111 000 001 110** |
 | 5 123 | **101 001 010 011** |
-
-##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Decimal</span>
-
-##### <span style="background:rgba(140, 140, 140, 0.12)">Decimal to Binary</span>
-
-##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Hexadecimal</span>
-
-##### <span style="background:rgba(140, 140, 140, 0.12)">Hexadecimal to Binary</span>
-
-
----
-
-> [!tip]
-> Dec 26, 2024 (9:00pm); Research Homework w/ Val (due Dec 27, 2024)
-> - Numerical & Non-Numerical Representations
-> - Backus-Naur Form (BNF)
-> - Reverse Polish Notation
-> - Quick Sort
