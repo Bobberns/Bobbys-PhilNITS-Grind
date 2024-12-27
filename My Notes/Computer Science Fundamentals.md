@@ -167,25 +167,25 @@ Process:
 2. Add leading zeros to the leftmost group if necessary.
 3. Convert each group into octal.
 
-![[Pasted image 20241227144612.png|200]]
+![[Pasted image 20241227144612.png|300]]
 
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Octal to Binary</span>
 Process:
 1. For each digit in the given octal number, <font color="#92d050">**convert it into binary of three bits**</font>.
 2. Combine the binary groups.
 
-![[Pasted image 20241226194555.png|200]]
+![[Pasted image 20241226194555.png|300]]
 
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Decimal</span>
 Process:
 1. Given that each bit has a positional value from LSB (right) to MSB (left), mind only bits with the presence of 1.
-2. Get the <font color="#92d050">summative positional weights of the present positional values</font>.
+2. Get the <font color="#92d050">**summative positional weights of the present positional values**</font>.
 
 ![[Pasted image 20241227150224.png|400]]
 
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Decimal to Binary</span>
 Process:
-1. Given the decimal number, find the <font color="#92d050">positional bit value that is less than or equal to the bit</font>.
+1. Given the decimal number, find the <font color="#92d050">**positional bit value that is less than or equal to the bit**</font>.
 2. Subtract the positional bit value to the current value of the given number each time a bit is marked. 
 3. Do this until the binary number is formed.
 
@@ -195,10 +195,17 @@ Convert (78)<sub>10</sub> to Binary
 ![[Pasted image 20241227152051.png|400]]
 
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Binary to Hexadecimal</span>
+Process:
+1. Given a binary number, <font color="#92d050">**group the bits into three**</font> from right to left.
+2. Add leading zeros to the leftmost group if necessary.
+3. Convert each group into hexadecimal.
 
+![[Pasted image 20241227170925.png|300]]
 
 ##### <span style="background:rgba(140, 140, 140, 0.12)">Hexadecimal to Binary</span>
-
+Process:
+1. For each digit in the hexadecimal number, <font color="#92d050">**convert it into binary of four bits**</font>.
+2. Combine the binary groups.
 
 ---
 
@@ -210,29 +217,32 @@ Convert (78)<sub>10</sub> to Binary
 > - Quick Sort
 
 **Practice Problems**
+1. Convert **(1010)<sub>2</sub>** to decimal
+2. Convert **(27)<sub>8</sub>** to binary
+3. Convert **(45)<sub>10</sub>** to octal
+4. Convert **(1F)<sub>16</sub>** to decimal
+5. Convert **(11)<sub>2</sub>** to hexadecimal
+6. Convert **(345)<sub>8</sub>** to decimal
+7. Convert **(57)<sub>10</sub>** to binary
+8. Convert **(1010101)<sub>2</sub>** to hexadecimal
+9. Convert **(2C)<sub>16</sub>** to binary
+10. Convert **(755)<sub>8</sub>** to hexadecimal
+11. Convert **(11001101)<sub>2</sub>** to octal
+12. Convert **(3F7)<sub>16</sub>** to binary
+13. Convert **(101101111)<sub>2</sub>** to decimal
+14. Convert **(1234)<sub>8</sub>** to hexadecimal
+15. Convert **(99)<sub>10</sub>** to hexadecimal
+16. Convert **(2FA9)<sub>16</sub>** to binary
+17. Convert **(111111000111)<sub>2</sub>** to decimal
+18. Convert **(245)<sub>10</sub>** to octal
+19. Convert **(4321)<sub>8</sub>** to decimal
+20. Convert **(FF)<sub>16</sub>** to octal
 
-|     Binary      |   Octal   |
-| :-------------: | :-------: |
-|     101 010     |  **52**   |
-|     110 101     |  **65**   |
-| 110 011 110 111 | **6 367** |
-|     111 110     |  **76**   |
-|   10 101 101    |  **255**  |
-|    1 001 010    |  **112**  |
-|   111 011 100   |  **734**  |
-| 10 001 100 101  | **2 145** |
-|   101 110 011   |  **563**  |
-|    1 001 011    |  **113**  |
+---
 
-| Octal |     **Binary**      |
-| :---: | :-----------------: |
-| 7 643 | **111 110 100 011** |
-| 3 152 | **011 001 101 010** |
-| 4 075 | **100 000 111 101** |
-| 6 251 | **110 010 101 001** |
-| 7 324 | **111 011 010 100** |
-| 5 670 | **101 110 111 000** |
-| 1 777 | **001 111 111 111** |
-| 2 465 | **010 100 110 101** |
-| 7 016 | **111 000 001 110** |
-| 5 123 | **101 001 010 011** |
+# Numerical Representation
+Numerical representation simply **<font color="#92d050">refers to the way numbers are stored in the computer's hardware and software</font>**. Numbers in everyday life are often expressed using digits 0-9, however this isn't the only way that the computer represents a number. Number base systems are used to determine which digits represent a number. Not only can we convert between base systems but we could also perform arithmetic calculations on numbers written in other base notations.
+
+There are also several different methods to represent negative numbers and fractional number using binary. This segment shall refer to the way numbers are stored, manipulated, and processed by the computer system. Since the computer operates in binary at the lowest level, all numerical data must be expressed in this format for processing. <font color="#92d050">The type of representation used highly depends on the context and the kind of operation being performed.</font>
+
+![[Pasted image 20241227180859.png|600]]
