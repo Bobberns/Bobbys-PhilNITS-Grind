@@ -246,3 +246,12 @@ Numerical representation simply **<font color="#92d050">refers to the way number
 There are also several different methods to represent negative numbers and fractional number using binary. This segment shall refer to the way numbers are stored, manipulated, and processed by the computer system. Since the computer operates in binary at the lowest level, all numerical data must be expressed in this format for processing. <font color="#92d050">The type of representation used highly depends on the context and the kind of operation being performed.</font>
 
 ![[Pasted image 20241227180859.png|600]]
+
+> Essentially saying that numbers are expressed or represented in more ways in one by the computer from its lowest form to how we see it on our screens.
+
+**Why does this even matter?**
+This fundamentally influences how data is processed, store, and are being manipulated by the computer and in mathematics. Here we simply grasp an understanding the behavior of data at its lowest form of representation, binary.
+
+![[Pasted image 20250102012704.png|300]]
+
+### Binary Arithmetic
